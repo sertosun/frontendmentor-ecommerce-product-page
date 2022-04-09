@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* img{
+    width: 100%;
+} */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f5f5f5;
+  width: 100%;
+  padding: 1.5em 0;
+}
+
+.nav_container_left {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5em;
+}
+
+nav ul li a {
+  color: #cbc9c9;
+}
+
+nav ul li a:hover {
+  color: #a3a1a1;
+}
+
+.nav_container_right {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  position: relative;
+}
+
+.icon_cart {
+  width: 20px;
+  height: 20px;
+}
+
+#iconCartNum {
+  position: absolute;
+  background-color: rgb(104, 203, 57);
+  color: rgb(209, 245, 8);
+  padding: 1px 3px;
+  border-radius: 20px;
+  font-size: 9px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+
+/* ------------------MAIN------------------- */
+
+.wrapper {
+  display: flex;
+  margin-top: 5em;
+  gap: 4em;
+}
+
+.left_area {
+  flex: 1;
+}
+
+.left_area_top {
+  position: relative;
+}
+
+.image_product {
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image_1 {
+  background-image: url("images/image-product-1.jpg");
+  /* opacity: 1; */
+  /* position: absolute; */
+}
+
+.image_2 {
+  /* opacity: 0; */
+  background-image: url("images/image-product-2.jpg");
+  /* position: absolute; */
+}
+
+.image_3 {
+  /* opacity: 0; */
+  background-image: url("images/image-product-3.jpg");
+  /* position: absolute; */
+}
+
+.image_4 {
+  /* opacity: 0; */
+  background-image: url("images/image-product-4.jpg");
+  /* position: absolute; */
+}
+
+.left_area_bottom {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.2em;
+}
+
+.image_product_thumbnail {
+  height: 100px;
+  border-radius: 10px;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.image_product_thumbnail:hover {
+  transform: translateY(10px);
+  opacity: 0.6;
+  border: 2px solid #ff7d1b;
+  transition: all 300ms;
+}
+
+.image1 {
+  background-image: url(images/image-product-1-thumbnail.jpg);
+  flex: 1;
+}
+
+.image2 {
+  background-image: url("images/image-product-2-thumbnail.jpg");
+  flex: 1;
+}
+
+.image3 {
+  background-image: url("images/image-product-3-thumbnail.jpg");
+  flex: 1;
+}
+
+.image4 {
+  background-image: url("images/image-product-4-thumbnail.jpg");
+  flex: 1;
+}
+
+/* -----------------RIGHT AREA-------------------- */
+
+.right_area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content_title {
+  color: #e6b98c;
+  font-weight: bold;
+}
+
+.content_head {
+  font-size: 2.5em;
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+  line-height: 1em;
+}
+
+.content_text {
+  display: block;
+  color: #c6c6c8;
+  line-height: 1.4;
+  margin-bottom: 1.5em;
+}
+
+.price_container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.price {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.reduziert {
+  font-weight: 400;
+  background-color: #eec589;
+  color: #ff7d1b;
+  padding: 0.2em 0.4em;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.previous_preis {
+  text-decoration: line-through;
+  color: #cbc9c9;
+  font-size: 0.9em;
+}
+
+.content_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f8fd;
+  padding: 1em;
+  width: 30%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.counter img {
+  cursor: pointer;
+}
+
+.counterinp {
+  width: 33%;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.addcart {
+  width: 70%;
+}
+
+.fa-cart-shopping {
+  color: white;
+  font-size: 1em;
+}
+
+.addcart button {
+  background-color: #ff7d1b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1.4em;
+  border: none;
+  border-radius: 5px;
+  width: 70%;
+  gap: 2em;
+  box-shadow: 0px 16px 16px -2px rgba(255, 125, 27, 0.38);
+}
+
+.addcart button:hover {
+  background-color: #f89448;
+}

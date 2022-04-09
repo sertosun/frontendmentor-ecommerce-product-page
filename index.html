@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9def274ed7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav_container">
+          <div class="nav_container_left">
+            <div class="logo">
+              <img src="images\logo.svg" alt="" />
+            </div>
+            <nav>
+              <ul>
+                <li><a href="">Collections</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Women</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="nav_container_right">
+            <span id="iconCartNum">0</span>
+            <img src="images/icon-cart.svg" class="icon_cart" alt="" />
+            <img src="images/image-avatar.png" class="avatar" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="wrapper">
+          <div class="left_area">
+            <div class="left_area_top">
+              <div class="image_1 image_product" id="image_1"></div>
+              <!-- <div class="image_2 image_product" id="image_2"></div>
+              <div class="image_3 image_product" id="image_3"></div>
+              <div class="image_4 image_product" id="image_4"></div> -->
+            </div>
+            <div class="left_area_bottom">
+              <div
+                class="image1 image_product_thumbnail"
+                id="image1"
+                onclick="image1()"
+              ></div>
+              <div
+                class="image2 image_product_thumbnail"
+                id="image2"
+                onclick="image2()"
+              ></div>
+              <div
+                class="image3 image_product_thumbnail"
+                id="image3"
+                onclick="image3()"
+              ></div>
+              <div
+                class="image4 image_product_thumbnail"
+                id="image4"
+                onclick="image4()"
+              ></div>
+            </div>
+          </div>
+
+          <div class="right_area">
+            <span class="content_title">SNEAKER COMPANY</span>
+            <h1 class="content_head">
+              Fall Limited Edition <br />
+              Sneakers
+            </h1>
+            <p class="content_text">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+            <div class="price_container">
+              <span class="price" id="price">$125.00</span>
+              <span class="reduziert">50%</span>
+            </div>
+            <span class="previous_preis">$250.00</span>
+            <div class="content_bottom">
+              <div class="counter">
+                <img
+                  src="images\icon-minus.svg"
+                  alt=""
+                  id="minus"
+                  onclick="minusFunc()"
+                />
+                <p id="counterInput">1</p>
+
+                <img
+                  src="images\icon-plus.svg"
+                  alt=""
+                  id="plus"
+                  onclick="plusFunc()"
+                />
+              </div>
+              <div class="addcart">
+                <button id="addcart" onclick="addCartFunc()">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="addcart_text">Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
